@@ -1,0 +1,155 @@
+=== Task 6: Advanced Listing ===
+--- Recursive ---
+techcorp:
+engineering
+hr
+marketing
+
+techcorp/engineering:
+backend
+devops
+frontend
+
+techcorp/engineering/backend:
+app.js
+database.sql
+server_config.txt
+task4_navigation_paths.txt
+
+techcorp/engineering/devops:
+docker-compose.yml
+Dockerfile
+pipeline.txt
+server_notice.txt
+
+techcorp/engineering/frontend:
+app_config.txt
+index.html
+styles.css
+
+techcorp/hr:
+onboarding
+policies
+
+techcorp/hr/onboarding:
+checklist.txt
+handbook.txt
+leave_policy.txt
+task4_navigation_paths.txt
+welcome_guide.txt
+
+techcorp/hr/policies:
+leave_policy.txt
+remote_work.txt
+
+techcorp/marketing:
+assets
+campaigns
+
+techcorp/marketing/assets:
+banner.jpg
+brochure.pdf
+logo_brief.txt
+logo.png
+task4_navigation_paths.txt
+
+techcorp/marketing/campaigns:
+q1_2026_launch.txt
+social_media.txt
+--- Size ---
+total 4
+-rw-rw-r-- 1 horng horng 26 Mar 17 14:17 app_config.txt
+-rw-rw-r-- 1 horng horng  0 Mar 17 14:17 index.html
+-rw-rw-r-- 1 horng horng  0 Mar 17 14:17 styles.css
+--- Time ---
+total 8
+-rw-rw-r-- 1 horng horng 39 Mar 17 14:17 leave_policy.txt
+-rw-rw-r-- 1 horng horng 32 Mar 17 14:17 remote_work.txt
+--- Human ---
+total 8.0K
+-rw-rw-r-- 1 horng horng   0 Mar 17 14:18 banner.jpg
+-rw-rw-r-- 1 horng horng   0 Mar 17 14:18 brochure.pdf
+-rw-rw-r-- 1 horng horng  22 Mar 17 14:24 logo_brief.txt
+-rw-rw-r-- 1 horng horng   0 Mar 17 14:18 logo.png
+-rw-rw-r-- 1 horng horng 152 Mar 17 14:24 task4_navigation_paths.txt
+--- Reverse size ---
+total 8
+-rw-rw-r-- 1 horng horng  0 Mar 17 14:17 database.sql
+-rw-rw-r-- 1 horng horng  0 Mar 17 14:17 app.js
+-rw-rw-r-- 1 horng horng 29 Mar 17 14:17 server_config.txt
+-rw-rw-r-- 1 horng horng 79 Mar 17 14:24 task4_navigation_paths.txt
+--- Reverse time ---
+total 16
+-rw-rw-r-- 1 horng horng  52 Mar 17 14:17 welcome_guide.txt
+-rw-rw-r-- 1 horng horng   0 Mar 17 14:17 checklist.txt
+-rw-rw-r-- 1 horng horng 132 Mar 17 14:24 task4_navigation_paths.txt
+-rw-rw-r-- 1 horng horng  23 Mar 17 14:24 handbook.txt
+-rw-rw-r-- 1 horng horng  39 Mar 17 14:24 leave_policy.txt
+--- Combined ---
+techcorp/:
+total 12K
+drwxrwxr-x 5 horng horng 4.0K Mar 17 14:17 engineering
+drwxrwxr-x 4 horng horng 4.0K Mar 17 14:17 hr
+drwxrwxr-x 4 horng horng 4.0K Mar 17 14:24 marketing
+
+techcorp/engineering:
+total 12K
+drwxrwxr-x 2 horng horng 4.0K Mar 17 14:24 backend
+drwxrwxr-x 2 horng horng 4.0K Mar 17 14:24 devops
+drwxrwxr-x 2 horng horng 4.0K Mar 17 14:17 frontend
+
+techcorp/engineering/backend:
+total 8.0K
+-rw-rw-r-- 1 horng horng 79 Mar 17 14:24 task4_navigation_paths.txt
+-rw-rw-r-- 1 horng horng 29 Mar 17 14:17 server_config.txt
+-rw-rw-r-- 1 horng horng  0 Mar 17 14:17 app.js
+-rw-rw-r-- 1 horng horng  0 Mar 17 14:17 database.sql
+
+techcorp/engineering/devops:
+total 8.0K
+-rw-rw-r-- 1 horng horng 48 Mar 17 14:24 server_notice.txt
+-rw-rw-r-- 1 horng horng 29 Mar 17 14:18 pipeline.txt
+-rw-rw-r-- 1 horng horng  0 Mar 17 14:18 docker-compose.yml
+-rw-rw-r-- 1 horng horng  0 Mar 17 14:18 Dockerfile
+
+techcorp/engineering/frontend:
+total 4.0K
+-rw-rw-r-- 1 horng horng 26 Mar 17 14:17 app_config.txt
+-rw-rw-r-- 1 horng horng  0 Mar 17 14:17 index.html
+-rw-rw-r-- 1 horng horng  0 Mar 17 14:17 styles.css
+
+techcorp/hr:
+total 8.0K
+drwxrwxr-x 2 horng horng 4.0K Mar 17 14:24 onboarding
+drwxrwxr-x 2 horng horng 4.0K Mar 17 14:24 policies
+
+techcorp/hr/onboarding:
+total 16K
+-rw-rw-r-- 1 horng horng 132 Mar 17 14:24 task4_navigation_paths.txt
+-rw-rw-r-- 1 horng horng  52 Mar 17 14:17 welcome_guide.txt
+-rw-rw-r-- 1 horng horng  39 Mar 17 14:24 leave_policy.txt
+-rw-rw-r-- 1 horng horng  23 Mar 17 14:24 handbook.txt
+-rw-rw-r-- 1 horng horng   0 Mar 17 14:17 checklist.txt
+
+techcorp/hr/policies:
+total 8.0K
+-rw-rw-r-- 1 horng horng 39 Mar 17 14:17 leave_policy.txt
+-rw-rw-r-- 1 horng horng 32 Mar 17 14:17 remote_work.txt
+
+techcorp/marketing:
+total 8.0K
+drwxrwxr-x 2 horng horng 4.0K Mar 17 14:24 assets
+drwxrwxr-x 2 horng horng 4.0K Mar 17 14:24 campaigns
+
+techcorp/marketing/assets:
+total 8.0K
+-rw-rw-r-- 1 horng horng 152 Mar 17 14:24 task4_navigation_paths.txt
+-rw-rw-r-- 1 horng horng  22 Mar 17 14:24 logo_brief.txt
+-rw-rw-r-- 1 horng horng   0 Mar 17 14:18 banner.jpg
+-rw-rw-r-- 1 horng horng   0 Mar 17 14:18 brochure.pdf
+-rw-rw-r-- 1 horng horng   0 Mar 17 14:18 logo.png
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-rw-r-- 1 horng horng 35 Mar 17 14:18 social_media.txt
+-rw-rw-r-- 1 horng horng 32 Mar 17 14:18 q1_2026_launch.txt

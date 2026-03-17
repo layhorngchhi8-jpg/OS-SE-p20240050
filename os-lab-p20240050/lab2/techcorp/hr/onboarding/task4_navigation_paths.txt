@@ -1,0 +1,4 @@
+/home/horng/os-se-p20240050/os-lab-p20240050/lab2/techcorp/hr/onboarding
+checklist.txt
+task4_navigation_paths.txt
+welcome_guide.txt
