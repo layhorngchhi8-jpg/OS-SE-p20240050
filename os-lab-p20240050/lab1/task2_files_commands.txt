@@ -1,5 +1,0 @@
-/home/horng/os-se-p20240050/os-lab-p20240050/lab1/task2_files
-a.txt
-b.txt
-This is file A
-This is file B
