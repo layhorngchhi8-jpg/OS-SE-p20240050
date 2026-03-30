@@ -1,6 +1,6 @@
 # Class Activity 1 — System Calls in Practice
 
-- Student Name: Saeng
+- Student Name: Chhi Layhorng
 - Student ID: p20240050
 
 ---
