@@ -1,0 +1,20 @@
+EOF
+
+  541  head -3 forkchild.c
+  542  gcc -o forkchild forkchild.c
+  543  ./forkchild > result_forkchild.txt 2>&1 &
+  544  ps -ef --forest | grep forkchild
+  545  cat result_forkchild.txt
+  546  ```
+
+You should see output like:
+```
+  547  Parent process (PID: 3948) — creating child...
+  548  Child process (PID: 3949, Parent PID: 3948)
+  549  Child: sleeping 30s — observe the process tree now!
+  550  Child: now executing 'ls -la'...
+  551  total 28
+  552  ...  (ls -la output)
+  553  Parent: child exited with status 0
+  554  Parent: done.
+  555  history | tail -n 20 > command_used_forkchild.txt
