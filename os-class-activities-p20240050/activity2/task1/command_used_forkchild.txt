@@ -1,20 +1,20 @@
-EOF
-
-  541  head -3 forkchild.c
-  542  gcc -o forkchild forkchild.c
-  543  ./forkchild > result_forkchild.txt 2>&1 &
-  544  ps -ef --forest | grep forkchild
-  545  cat result_forkchild.txt
-  546  ```
-
-You should see output like:
-```
-  547  Parent process (PID: 3948) — creating child...
-  548  Child process (PID: 3949, Parent PID: 3948)
-  549  Child: sleeping 30s — observe the process tree now!
-  550  Child: now executing 'ls -la'...
-  551  total 28
-  552  ...  (ls -la output)
-  553  Parent: child exited with status 0
-  554  Parent: done.
-  555  history | tail -n 20 > command_used_forkchild.txt
+ 1337  cd --
+ 1338  cd os-se-p20240050
+ 1339  cd os-lab-p20240050/
+ 1340  cd lab3
+ 1341  nano README.mv
+ 1342  echo "=== Full Command History ===" > task_history.txt
+ 1343  history | tail -n 100 >> task_history.txt
+ 1344  git add .
+ 1345  git commit -m"add new"
+ 1346  cd --
+ 1347  cd os-se-p20240050
+ 1348  git push
+ 1349  ssh ssh2.rathpisey.site
+ 1350  cd os-se-p20240050
+ 1351  ls
+ 1352  cd os-class-activities-p20240050/
+ 1353  ls
+ 1354  cd activity2
+ 1355  tree
+ 1356  history | tail -n 20 > command_used_forkchild.txt
