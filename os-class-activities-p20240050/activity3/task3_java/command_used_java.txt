@@ -1,30 +1,30 @@
-        @Override
-        public void run() {
-            System.out.printf("Task %d started on thread %s (ID: %d)%n",
-                taskId, Thread.currentThread().getName(), Thread.currentThread().getId());
-            try { Thread.sleep(1000); } catch (InterruptedException e) { e.printStackTrace(); }
-            System.out.printf("Task %d completed on thread %s%n",
-                taskId, Thread.currentThread().getName());
-        }
-    }
-    public static void main(String[] args) throws InterruptedException {
-        System.out.println("Main: creating thread pool with 2 threads for 6 tasks\n");
-        ExecutorService pool = Executors.newFixedThreadPool(2);
-        for (int i = 1; i <= 6; i++) { pool.submit(new Task(i)); }
-        pool.shutdown();
-        pool.awaitTermination(30, TimeUnit.SECONDS);
-        System.out.println("\nMain: all tasks completed. Pool shut down.");
-    }
-}
-EOF
-
- 1900  javac PoolDemo.java
- 1901  java PoolDemo
- 1902  [200~java ThreadDemo > result_thread_demo.txt 2>&1
- 1903  java RunnableDemo > result_runnable_demo.txt 2>&1
- 1904  java PoolDemo > result_pool_demo.txt 2>&1
- 1905  history | tail -n 30 > command_used_java.txt~
- 1906  java ThreadDemo > result_thread_demo.txt 2>&1
- 1907  java RunnableDemo > result_runnable_demo.txt 2>&1
- 1908  java PoolDemo > result_pool_demo.txt 2>&1
- 1909  history | tail -n 30 > command_used_java.txt
+ 1932  cd ~/os-se-p20240050
+ 1933  git add os-class-activities-p20240050/activity3/
+ 1934  git commit -m "Add class activity 3 — Socket Communication & Multithreading"
+ 1935  git push origin main
+ 1936  cd ~/os-se-p20240050/os-class-activities-p20240050/activity3/task3_java
+ 1937  java ThreadDemo
+ 1938  java RunnableDemo
+ 1939  java PoolDemo
+ 1940  cd ~/os-se-p20240050/os-class-activities-p20240050/activity3/task2_threads
+ 1941  ./threads_observe &
+ 1942  sleep 1
+ 1943  ps -T -p $(pgrep threads_observe)
+ 1944  kill $(pgrep threads_observe)
+ 1945  cd ~/os-se-p20240050/os-class-activities-p20240050/activity3/task3_java
+ 1946  ls
+ 1947  java ThreadDemo
+ 1948  java RunnableDemo
+ 1949  java PoolDemo
+ 1950  sudo apt install default-jdk -y
+ 1951  java ThreadDemo
+ 1952  javac ThreadDemo.java
+ 1953  java ThreadDemo
+ 1954  javac RunnableDemo.java
+ 1955  java RunnableDemo
+ 1956  javac PoolDemo.java
+ 1957  java PoolDemo
+ 1958  java ThreadDemo > result_thread_demo.txt 2>&1
+ 1959  java RunnableDemo > result_runnable_demo.txt 2>&1
+ 1960  java PoolDemo > result_pool_demo.txt 2>&1
+ 1961  history | tail -n 30 > command_used_java.txt

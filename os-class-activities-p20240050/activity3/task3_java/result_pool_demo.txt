@@ -1,11 +1,16 @@
-Command 'java' not found, but can be installed with:
-sudo apt install openjdk-17-jre-headless  # version 17.0.18+8-1~24.04.1, or
-sudo apt install openjdk-21-jre-headless  # version 21.0.10+7-1~24.04
-sudo apt install default-jre              # version 2:1.17-75
-sudo apt install openjdk-18-jre-headless  # version 18.0.2+9-2~22.04
-sudo apt install openjdk-11-jre-headless  # version 11.0.30+7-1ubuntu1~24.04
-sudo apt install openjdk-25-jre-headless  # version 25.0.2+10-1~24.04
-sudo apt install openjdk-8-jre-headless   # version 8u482-ga~us1-0ubuntu1~24.04
-sudo apt install openjdk-19-jre-headless  # version 19.0.2+7-4
-sudo apt install openjdk-20-jre-headless  # version 20.0.2+9-1
-sudo apt install openjdk-22-jre-headless  # version 22~22ea-1
+Main: creating thread pool with 2 threads for 6 tasks
+
+Task 2 started on thread pool-1-thread-2 (ID: 19)
+Task 1 started on thread pool-1-thread-1 (ID: 18)
+Task 1 completed on thread pool-1-thread-1
+Task 2 completed on thread pool-1-thread-2
+Task 3 started on thread pool-1-thread-2 (ID: 19)
+Task 4 started on thread pool-1-thread-1 (ID: 18)
+Task 3 completed on thread pool-1-thread-2
+Task 5 started on thread pool-1-thread-2 (ID: 19)
+Task 4 completed on thread pool-1-thread-1
+Task 6 started on thread pool-1-thread-1 (ID: 18)
+Task 5 completed on thread pool-1-thread-2
+Task 6 completed on thread pool-1-thread-1
+
+Main: all tasks completed. Pool shut down.

@@ -1,11 +1,13 @@
-Command 'java' not found, but can be installed with:
-sudo apt install openjdk-17-jre-headless  # version 17.0.18+8-1~24.04.1, or
-sudo apt install openjdk-21-jre-headless  # version 21.0.10+7-1~24.04
-sudo apt install default-jre              # version 2:1.17-75
-sudo apt install openjdk-18-jre-headless  # version 18.0.2+9-2~22.04
-sudo apt install openjdk-11-jre-headless  # version 11.0.30+7-1ubuntu1~24.04
-sudo apt install openjdk-25-jre-headless  # version 25.0.2+10-1~24.04
-sudo apt install openjdk-8-jre-headless   # version 8u482-ga~us1-0ubuntu1~24.04
-sudo apt install openjdk-19-jre-headless  # version 19.0.2+7-4
-sudo apt install openjdk-20-jre-headless  # version 20.0.2+9-1
-sudo apt install openjdk-22-jre-headless  # version 22~22ea-1
+Main: creating threads with Runnable interface
+
+[Download] Step 1 (Thread: downloader, ID: 18)
+[Process] Step 1 (Thread: processor, ID: 19)
+[Upload] Step 1 (Thread: uploader, ID: 20)
+[Upload] Step 2 (Thread: uploader, ID: 20)
+[Process] Step 2 (Thread: processor, ID: 19)
+[Download] Step 2 (Thread: downloader, ID: 18)
+[Upload] Step 3 (Thread: uploader, ID: 20)
+[Process] Step 3 (Thread: processor, ID: 19)
+[Download] Step 3 (Thread: downloader, ID: 18)
+
+Main: all tasks completed.
