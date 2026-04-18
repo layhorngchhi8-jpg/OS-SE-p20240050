@@ -1,0 +1,20 @@
+ 1902  [200~java ThreadDemo > result_thread_demo.txt 2>&1
+ 1903  java RunnableDemo > result_runnable_demo.txt 2>&1
+ 1904  java PoolDemo > result_pool_demo.txt 2>&1
+ 1905  history | tail -n 30 > command_used_java.txt~
+ 1906  java ThreadDemo > result_thread_demo.txt 2>&1
+ 1907  java RunnableDemo > result_runnable_demo.txt 2>&1
+ 1908  java PoolDemo > result_pool_demo.txt 2>&1
+ 1909  history | tail -n 30 > command_used_java.txt
+ 1910  cd ~/os-class-activities-p20250050/activity3/task2_threads
+ 1911  ./threads > result_threads.txt 2>&1
+ 1912  ./threads_mutex > result_threads_mutex.txt 2>&1
+ 1913  ./threads_observe &
+ 1914  sleep 2
+ 1915  PID=$(pgrep threads_observe)
+ 1916  ps -eLf | grep threads_observe > result_observe_linux.txt
+ 1917  ps -T -p $PID >> result_observe_linux.txt
+ 1918  echo "--- /proc/$PID/task/ listing ---" >> result_observe_linux.txt
+ 1919  ls /proc/$PID/task/ >> result_observe_linux.txt
+ 1920  kill $PID
+ 1921  history | tail -n 20 > command_used_threads.txt
