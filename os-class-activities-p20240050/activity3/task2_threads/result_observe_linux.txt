@@ -1,0 +1,18 @@
+horng      15155   14293   15155  0    5 13:05 pts/1    00:00:00 ./threads_observe
+horng      15155   14293   15157  0    5 13:05 pts/1    00:00:00 ./threads_observe
+horng      15155   14293   15158  0    5 13:05 pts/1    00:00:00 ./threads_observe
+horng      15155   14293   15159  0    5 13:05 pts/1    00:00:00 ./threads_observe
+horng      15155   14293   15160  0    5 13:05 pts/1    00:00:00 ./threads_observe
+horng      15163   14293   15163  0    1 13:05 pts/1    00:00:00 grep --color=auto threads_observe
+    PID    SPID TTY          TIME CMD
+  15155   15155 pts/1    00:00:00 threads_observe
+  15155   15157 pts/1    00:00:00 threads_observe
+  15155   15158 pts/1    00:00:00 threads_observe
+  15155   15159 pts/1    00:00:00 threads_observe
+  15155   15160 pts/1    00:00:00 threads_observe
+--- /proc/15155/task/ listing ---
+15155
+15157
+15158
+15159
+15160

@@ -1,0 +1,23 @@
+=== Task 4: Navigation with Paths ===
+--- Absolute path to HR/policies ---
+/home/horng/os-se-p20240050/os-lab-p20240050/lab2/techcorp/hr/policies
+leave_policy.txt
+remote_work.txt
+--- Absolute path to HR/policies ---
+/home/horng/os-se-p20240050/os-lab-p20240050/lab2/techcorp/hr/policies
+leave_policy.txt
+remote_work.txt
+--- Sideways to engineering/frontend/ ---
+/home/horng/os-se-p20240050/os-lab-p20240050/lab2/techcorp/engineering/frontend
+app_config.txt
+index.html
+styles.css
+--- Up two levels to techcorp/ ---
+/home/horng/os-se-p20240050/os-lab-p20240050/lab2/techcorp
+--- Absolute path to marketing/campaigns/ ---
+/home/horng/os-se-p20240050/os-lab-p20240050/lab2/techcorp/marketing/campaigns
+q1_launch.txt
+social_media.txt
+--- cd - (back to previous directory) ---
+/home/horng/os-se-p20240050/os-lab-p20240050/lab2/techcorp
+--- Challenge Navigation ---

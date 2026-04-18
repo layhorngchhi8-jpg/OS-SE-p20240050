@@ -1,0 +1,28 @@
+total 84
+drwxr-x--- 16 horng horng 4096 Mar 15 18:01 .
+drwxr-xr-x  3 root  root  4096 Mar 12 21:05 ..
+-rw-------  1 horng horng 3140 Mar 17 14:03 .bash_history
+-rw-r--r--  1 horng horng  220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 horng horng 3771 Mar 31  2024 .bashrc
+drwx------  8 horng horng 4096 Mar 15 17:38 .cache
+drwx------ 13 horng horng 4096 Mar 15 18:01 .config
+drwxr-xr-x  2 horng horng 4096 Mar 12 21:35 Desktop
+drwxr-xr-x  2 horng horng 4096 Mar 12 21:35 Documents
+drwxr-xr-x  2 horng horng 4096 Mar 12 21:35 Downloads
+-rw-rw-r--  1 horng horng   57 Mar 12 22:35 .gitconfig
+drwx------  4 horng horng 4096 Mar 12 21:35 .local
+drwxr-xr-x  2 horng horng 4096 Mar 12 21:35 Music
+drwxrwxr-x  4 horng horng 4096 Mar 15 19:03 os-se-p20240050
+drwxr-xr-x  2 horng horng 4096 Mar 12 21:35 Pictures
+-rw-r--r--  1 horng horng  807 Mar 31  2024 .profile
+drwxr-xr-x  2 horng horng 4096 Mar 12 21:35 Public
+drwx------  5 horng horng 4096 Mar 15 17:38 snap
+drwx------  2 horng horng 4096 Mar 12 21:34 .ssh
+-rw-r--r--  1 horng horng    0 Mar 12 22:31 .sudo_as_admin_successful
+drwxr-xr-x  2 horng horng 4096 Mar 12 21:35 Templates
+drwxr-xr-x  2 horng horng 4096 Mar 12 21:35 Videos
+--- Root directory (/) ---
+/
+--- Back to home ---
+/home/horng
+     

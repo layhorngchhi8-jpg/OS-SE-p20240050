@@ -1,0 +1,69 @@
+=== Task 5: File Organization ===
+--- Moved server_notice.txt ---
+docker-compose.yml
+Dockerfile
+handbook.txt
+pipeline.txt
+server_notice.txt
+--- Moved logo_brief ---
+banner.jpg
+brochure.pdf
+logo_brief.txt
+logo.png
+task4_navigation_paths.txt
+--- Removed debug ---
+leave_policy.txt
+remote_work.txt
+--- Moved handbook ---
+checklist.txt
+handbook.txt
+task4_navigation_paths.txt
+welcome_guide.txt
+--- Copied leave policy ---
+checklist.txt
+handbook.txt
+leave_policy.txt
+task4_navigation_paths.txt
+welcome_guide.txt
+--- Renamed campaign ---
+q1_2026_launch.txt
+social_media.txt
+--- Final Structure ---
+techcorp
+├── engineering
+│   ├── backend
+│   │   ├── app.js
+│   │   ├── database.sql
+│   │   ├── server_config.txt
+│   │   └── task4_navigation_paths.txt
+│   ├── devops
+│   │   ├── docker-compose.yml
+│   │   ├── Dockerfile
+│   │   ├── pipeline.txt
+│   │   └── server_notice.txt
+│   └── frontend
+│       ├── app_config.txt
+│       ├── index.html
+│       └── styles.css
+├── hr
+│   ├── onboarding
+│   │   ├── checklist.txt
+│   │   ├── handbook.txt
+│   │   ├── leave_policy.txt
+│   │   ├── task4_navigation_paths.txt
+│   │   └── welcome_guide.txt
+│   └── policies
+│       ├── leave_policy.txt
+│       └── remote_work.txt
+└── marketing
+    ├── assets
+    │   ├── banner.jpg
+    │   ├── brochure.pdf
+    │   ├── logo_brief.txt
+    │   ├── logo.png
+    │   └── task4_navigation_paths.txt
+    └── campaigns
+        ├── q1_2026_launch.txt
+        └── social_media.txt
+
+11 directories, 25 files
