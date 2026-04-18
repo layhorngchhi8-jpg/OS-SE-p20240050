@@ -11,13 +11,14 @@ int main() {
     char buffer[512];
 
     dir = opendir(".");
-
     if (dir == NULL) {
         write(2, "Error opening directory\n", 24);
         return 1;
     }
 
-    int len = snprintf(buffer, sizeof(buffer), "%-30s %10s\n", "Filename", "Size");
+    int len = snprintf(buffer, sizeof(buffer), "%-30s %10s\n", "Filename", "Size (bytes)");
+    write(1, buffer, len);
+    len = snprintf(buffer, sizeof(buffer), "%-30s %10s\n", "------------------------------", "----------");
     write(1, buffer, len);
 
     while ((entry = readdir(dir)) != NULL) {
