@@ -1,0 +1,5 @@
+=== inbox permissions ===
+drwx-wx-wx 2 se-chhi-layhorng se-chhi-layhorng 4096 May 26 14:25 /home/se-chhi-layhorng/public_inbox
+=== inbox files ===
+total 0
+-rw-rw-r-- 1 se-rasmey-rithysak se-rasmey-rithysak 0 May 26 14:25 test_from_superman.txt

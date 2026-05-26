@@ -1,0 +1,6 @@
+=== PATH ===
+/home/se-chhi-layhorng/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+=== warmup location ===
+/home/se-chhi-layhorng/bin/warmup
+=== warmup output ===
+Warming up! Today is Tue May 26 02:51:20 PM +07 2026

@@ -1,0 +1,7 @@
+=== guestbook permissions ===
+-rw------- 1 se-chhi-layhorng se-chhi-layhorng 80 May 26 14:45 /home/se-chhi-layhorng/guestbook.txt
+=== sign_book ===
+-rwsr-xr-x 1 se-chhi-layhorng se-chhi-layhorng 16096 May 26 14:42 /home/se-chhi-layhorng/bin/sign_book
+=== guestbook contents ===
+Visitor signed: Hello from se-chhi-layhorng
+Visitor signed: Hello from Heaheang
