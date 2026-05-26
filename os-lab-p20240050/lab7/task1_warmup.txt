@@ -1,0 +1,4 @@
+=== warmup permissions ===
+-rwxrwxr-x 1 se-chhi-layhorng se-chhi-layhorng 48 May 26 13:40 /home/se-chhi-layhorng/bin/warmup
+=== warmup output ===
+Warming up! Today is Tue May 26 02:51:20 PM +07 2026
