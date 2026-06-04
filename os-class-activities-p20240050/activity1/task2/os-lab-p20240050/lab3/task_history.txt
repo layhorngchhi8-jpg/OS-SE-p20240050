@@ -1,0 +1,101 @@
+=== Full Command History ===
+const char* tc_get_hostname(void);
+const char* tc_get_uptime(void);
+int tc_get_cpu_count(void);
+
+// NEW — Returns total memory in MB
+long tc_get_memory_mb(void);
+
+#endif
+EOF
+
+ 1188  [200~cat > techcorp_memory.c << 'EOF'
+#include "techcorp_sysinfo.h"
+#include <stdio.h>
+
+long tc_get_memory_mb(void) {
+    FILE *fp = fopen("/proc/meminfo", "r");
+    if (fp) {
+        long mem_kb = 0;
+        if (fscanf(fp, "MemTotal: %ld kB", &mem_kb) == 1) {
+            fclose(fp);
+            return mem_kb / 1024;
+        }
+        fclose(fp);
+    }
+    return -1;
+}
+
+ 1189  cat > techcorp_memory.c << 'EOF'
+#include "techcorp_sysinfo.h"
+#include <stdio.h>
+
+long tc_get_memory_mb(void) {
+    FILE *fp = fopen("/proc/meminfo", "r");
+    if (fp) {
+        long mem_kb = 0;
+        if (fscanf(fp, "MemTotal: %ld kB", &mem_kb) == 1) {
+            fclose(fp);
+            return mem_kb / 1024;
+        }
+        fclose(fp);
+    }
+    return -1;
+}
+EOF
+
+ 1190  gcc -fPIC -c techcorp_sysinfo.c -o techcorp_sysinfo.o
+ 1191  gcc -fPIC -c techcorp_memory.c -o techcorp_memory.o
+ 1192  gcc -shared -o libtechcorp_sysinfo.so techcorp_sysinfo.o techcorp_memory.o
+ 1193  echo "" >> ../task5_shared_library.txt
+ 1194  echo "--- Phase 4: Partner B recompiled library with new function ---" >> ../task5_shared_library.txt
+ 1195  file libtechcorp_sysinfo.so >> ../task5_shared_library.txt
+ 1196  # Copy the library to the system library directory
+ 1197  sudo cp libtechcorp_sysinfo.so /usr/local/lib/
+ 1198  # Refresh the shared library cache
+ 1199  sudo ldconfig
+ 1200  # Verify it is registered
+ 1201  echo "" >> ../task5_shared_library.txt
+ 1202  echo "--- System-wide install: ldconfig cache ---" >> ../task5_shared_library.txt
+ 1203  ldconfig -p | grep techcorp >> ../task5_shared_library.txt
+ 1204  # Re-test WITHOUT LD_LIBRARY_PATH
+ 1205  echo "" >> ../task5_shared_library.txt
+ 1206  echo "--- System-wide test (no LD_LIBRARY_PATH) ---" >> ../task5_shared_library.txt
+ 1207  ldd ./sysinfo_test_v2 >> ../task5_shared_library.txt 2>&1
+ 1208  ./sysinfo_test_v2 >> ../task5_shared_library.txt
+ 1209  cat > techcorp_memory.c << 'EOF'
+#include "techcorp_sysinfo.h"
+#include <stdio.h>
+
+long tc_get_memory_mb(void) {
+    FILE *fp = fopen("/proc/meminfo", "r");
+    if (fp) {
+        long mem_kb = 0;
+        if (fscanf(fp, "MemTotal: %ld kB", &mem_kb) == 1) {
+            fclose(fp);
+            return mem_kb / 1024;
+        }
+        fclose(fp);
+    }
+    return -1;
+}
+EOF
+
+ 1210  gcc -fPIC -c techcorp_sysinfo.c -o techcorp_sysinfo.o
+ 1211  gcc -fPIC -c techcorp_memory.c -o techcorp_memory.o
+ 1212  gcc -shared -o libtechcorp_sysinfo.so techcorp_sysinfo.o techcorp_memory.o
+ 1213  echo "" >> ../task5_shared_library.txt
+ 1214  echo "--- Pair Information ---" >> ../task5_shared_library.txt
+ 1215  echo "Role A (Library Author → v2 Tester): Pong Mengheang - p20240041" >> ../task5_shared_library.txt
+ 1216  echo "Role B (Test Author → v2 Library Extender): Chhi Layhorng - <p20240050>" >> ../task5_shared_library.txt
+ 1217  ldconfig -p | grep techcorp
+ 1218  ldd ./sysinfo_test_v2
+ 1219  echo "=== Full Command History ===" > task_history.txt
+ 1220  history | tail -n 100 >> task_history.txt
+ 1221  cd --
+ 1222  cd os-se-p20240050
+ 1223  cd os-lab-p20240050/
+ 1224  cd lab3
+ 1225  nano README.mv
+ 1226  echo "=== Full Command History ===" > task_history.txt
+ 1227  history | tail -n 100 >> task_history.txt

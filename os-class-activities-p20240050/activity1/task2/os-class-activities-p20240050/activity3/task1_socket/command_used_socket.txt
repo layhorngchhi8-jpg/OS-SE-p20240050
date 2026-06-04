@@ -1,0 +1,20 @@
+ 1864  git add .
+ 1865  git commit -m "Lab 4: I/O Redirection, Pipelines & Process Management"
+ 1866  git push origin main
+ 1867  git remote set-url origin https://layhorngchhi8-jpg@github.com/layhorngchhi8-jpg/OS-SE-p20240050.git
+ 1868  git push origin main
+ 1869  ssh ssh2.rathpisey.site
+ 1870  ps -o pid,ppid,stat,cmd -p <CHILD_PID>
+ 1871  ps -o pid,ppid,stat,cmd -p 13381
+ 1872  ./client
+ 1873  gcc -o server server.c
+ 1874  gcc -o client client.c
+ 1875  cd os-class-activities-p20250050/activity3/os-class-activities-p20250050/activity3/task1_socket
+ 1876  ./client
+ 1877  cd os-class-activities-p20250050/activity3/os-class-activities-p20250050/activity3/task1_socket
+ 1878  ./server > result_server.txt 2>&1 &
+ 1879  sleep 1
+ 1880  ./client > result_client.txt 2>&1
+ 1881  wait
+ 1882  cat result_server.txt result_client.txt > result_socket.txt
+ 1883  history | tail -n 20 > command_used_socket.txt

@@ -1,0 +1,20 @@
+    mq_getattr(mq, &attr);
+
+    if (mq_receive(mq, buffer, attr.mq_msgsize, NULL) == -1) { perror("mq_receive"); exit(EXIT_FAILURE); }
+
+    printf("Receiver: message received from queue '%s'\n", QUEUE_NAME);
+    printf("Receiver: message = \"%s\"\n", buffer);
+
+    mq_close(mq);
+    if (mq_unlink(QUEUE_NAME) == -1) { perror("mq_unlink"); exit(EXIT_FAILURE); }
+    printf("Receiver: queue unlinked.\n");
+    return 0;
+}
+EOF
+
+ 1371  gcc -o sender sender.c -lrt
+ 1372  gcc -o receiver receiver.c -lrt
+ 1373  ./sender
+ 1374  ./receiver > result-mq-ipc.txt
+ 1375  cat result-mq-ipc.txt
+ 1376  history | tail -n 20 > command_used_mq.txt
