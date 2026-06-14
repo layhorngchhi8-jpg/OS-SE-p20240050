@@ -1,0 +1,8 @@
+#!/bin/bash
+target="/home/<PartnerUsername>/public_api/buy_widget"
+for i in {1..50}; do
+   buy_widget "Bot_$i" 2 &
+done
+
+wait
+

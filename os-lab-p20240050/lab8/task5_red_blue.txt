@@ -1,0 +1,21 @@
+=== public api permissions ===
+drwxr-x--x 16 se-chhi-layhorng se-chhi-layhorng 4096 Jun 11 15:49 /home/se-chhi-layhorng
+drwxr-xr-x  2 se-chhi-layhorng se-chhi-layhorng 4096 Jun 14 23:15 /home/se-chhi-layhorng/public_api
+total 12
+-rwxrwxr-x 1 se-chhi-layhorng se-chhi-layhorng 1030 Jun 14 23:15 buy_widget
+-rw-rw-rw- 1 se-chhi-layhorng se-chhi-layhorng    0 Jun 14 23:15 inventory.lock
+-rw-rw-rw- 1 se-chhi-layhorng se-chhi-layhorng    2 Jun 14 23:15 inventory.txt
+-rw-rw-r-- 1 se-chhi-layhorng se-chhi-layhorng 2541 Jun 14 23:15 sales.log
+=== inventory ===
+0
+=== red team sales evidence ===
+[P20240050] [SUCCESS] RedTeam_19 bought 2 widgets.
+[P20240050] [SUCCESS] RedTeam_25 bought 2 widgets.
+[P20240050] [SUCCESS] RedTeam_23 bought 2 widgets.
+[P20240050] [SUCCESS] RedTeam_29 bought 2 widgets.
+[P20240050] [SUCCESS] RedTeam_30 bought 2 widgets.
+[P20240050] [SUCCESS] RedTeam_33 bought 2 widgets.
+[P20240050] [SUCCESS] RedTeam_43 bought 2 widgets.
+[P20240050] [SUCCESS] RedTeam_36 bought 2 widgets.
+[P20240050] [SUCCESS] RedTeam_22 bought 2 widgets.
+[P20240050] [SUCCESS] RedTeam_27 bought 2 widgets.

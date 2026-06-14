@@ -1,0 +1,6 @@
+=== drop zone permissions ===
+drwxrwxrwt 2 se-chhi-layhorng se-chhi-layhorng 4096 Jun  2 14:16 /home/se-chhi-layhorng/vendor_reports
+=== drop zone files ===
+total 4
+-rw-rw-r-- 1 se-chhi-layhorng se-chhi-layhorng 27 Jun 14 23:17 my_rules.txt
+=== partner deletion result ===
