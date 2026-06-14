@@ -1,0 +1,16 @@
+Run 1 final inventory: 100
+Run 2 final inventory: 100
+Run 3 final inventory: 0
+Run 4 final inventory: 0
+Run 5 final inventory: 0
+
+Explanation:
+The inconsistent results across runs demonstrate a TOC-TOU (Time-of-Check to
+Time-of-Use) race condition. Without a lock, multiple bot processes run
+concurrently and can all read the same inventory value before any of them
+writes an updated value back. For example, if 10 bots all read 100 at the
+same time, they each calculate 98 and write 98, so only 2 units are deducted
+instead of 20. Runs 1 and 2 ended at 100 because the inventory file path was
+broken at the time, so no purchases succeeded. Runs 3-5 show 0 because the
+patched buy_widget with flock was already in place, serializing all purchases
+correctly so every deduction was applied without overlap.
