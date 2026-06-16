@@ -1,0 +1,3 @@
+=== script permissions ===
+-rwxrwxr-x 1 se-chhi-layhorng se-chhi-layhorng 401 Jun 16 13:45 /home/se-chhi-layhorng/bin/automation_demo
+=== log contents ===

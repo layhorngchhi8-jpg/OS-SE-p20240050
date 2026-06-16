@@ -1,0 +1,4 @@
+=== backup script permissions ===
+-rwxrwxr-x 1 se-chhi-layhorng se-chhi-layhorng 718 Jun 16 13:50 /home/se-chhi-layhorng/bin/backup_project
+=== archives kept (should be 3) ===
+=== backup log ===
