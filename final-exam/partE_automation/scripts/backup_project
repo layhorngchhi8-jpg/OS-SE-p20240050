@@ -1,0 +1,27 @@
+#!/bin/bash
+
+SRC_DIR="$HOME/sample_project"
+BACKUP_DIR="$HOME/sample_project_backups"
+RETAIN=2
+TIMESTAMP=$(date '+%Y%m%d_%H%M%S')
+ARCHIVE_NAME="sample_project-$TIMESTAMP.tar.gz"
+
+mkdir -p "$BACKUP_DIR"
+
+tar -czf "$BACKUP_DIR/$ARCHIVE_NAME" -C "$HOME" sample_project
+
+echo "Created: $BACKUP_DIR/$ARCHIVE_NAME"
+
+# Prune: keep only the newest $RETAIN archives
+cd "$BACKUP_DIR" || exit 1
+archive_count=$(ls -1 sample_project-*.tar.gz 2>/dev/null | wc -l)
+
+if [ "$archive_count" -gt "$RETAIN" ]; then
+  ls -1t sample_project-*.tar.gz | tail -n +$((RETAIN + 1)) | while read -r old_archive; do
+    echo "Pruning old archive: $old_archive"
+    rm -f "$old_archive"
+  done
+fi
+
+echo "Current archives:"
+ls -lt "$BACKUP_DIR"

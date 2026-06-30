@@ -1,0 +1,19 @@
+#!/bin/bash
+
+BASE_DIR="$HOME/relay_pass_data"
+STOCK_FILE="$BASE_DIR/stock.txt"
+NUM_BUYERS=40
+
+echo "Resetting stock to 150..."
+mkdir -p "$BASE_DIR"
+echo 150 > "$STOCK_FILE"
+
+echo "Launching $NUM_BUYERS concurrent buyers..."
+for i in $(seq 1 "$NUM_BUYERS"); do
+  buy_relay_pass "buyer_$i" 1 &
+done
+
+wait
+
+final_stock=$(cat "$STOCK_FILE")
+echo "All buyers finished. Final stock: $final_stock"

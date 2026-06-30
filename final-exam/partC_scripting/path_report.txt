@@ -1,0 +1,6 @@
+PATH:
+/home/se-chhi-layhorng/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Resolved location of greeter:
+/home/se-chhi-layhorng/bin/greeter
+greeter is hashed (/home/se-chhi-layhorng/bin/greeter)

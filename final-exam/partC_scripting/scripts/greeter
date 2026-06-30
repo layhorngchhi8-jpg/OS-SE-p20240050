@@ -1,0 +1,15 @@
+#!/bin/bash
+
+current_user=$(whoami)
+logged_in=$(who | wc -l)
+sys_uptime=$(uptime -p)
+
+messages=("Stay sharp, OrbitWorks engineer." "Relay Pass launch is close!" "Keep your stock file safe." "Coffee first, scripts second.")
+random_msg=${messages[$RANDOM % ${#messages[@]}]}
+
+echo "=================================="
+echo " Welcome, $current_user"
+echo " Logged-in users: $logged_in"
+echo " Uptime: $sys_uptime"
+echo " Message: $random_msg"
+echo "=================================="

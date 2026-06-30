@@ -1,0 +1,11 @@
+total 4
+-rw------- 1 se-chhi-layhorng se-chhi-layhorng 16 Jun 30 14:05 private.txt
+drwx--x--x 2 se-chhi-layhorng se-chhi-layhorng 4096 Jun 30 14:05 shared
+  File: secret/private.txt
+  Size: 16        	Blocks: 8          IO Block: 4096   regular file
+Device: 252,0	Inode: 47450467    Links: 1
+Access: (0600/-rw-------)  Uid: ( 1120/se-chhi-layhorng)   Gid: ( 1122/se-chhi-layhorng)
+Access: 2026-06-30 14:05:25.840427354 +0700
+Modify: 2026-06-30 14:05:33.347374594 +0700
+Change: 2026-06-30 14:05:38.303339750 +0700
+ Birth: 2026-06-30 14:05:25.840427354 +0700

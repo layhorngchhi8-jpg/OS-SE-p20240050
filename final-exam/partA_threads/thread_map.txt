@@ -1,0 +1,5 @@
+    PID    SPID TTY          TIME CMD
+1502748 1502748 pts/25   00:00:00 thread_demo
+1502748 1502749 pts/25   00:00:00 thread_demo
+1502748 1502750 pts/25   00:00:00 thread_demo
+1502748 1502751 pts/25   00:00:00 thread_demo
